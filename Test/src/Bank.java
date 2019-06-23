@@ -8,6 +8,7 @@ public class Bank {
         Scanner scanner = new Scanner(System.in);
         double percent = 1.5;
 
+
         System.out.println("Введите сумму влаживаемых средств ");
         double sum = scanner.nextDouble();
         System.out.println("Введите количество лет хранения депозита");
