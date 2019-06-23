@@ -21,13 +21,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int[] arr = new int[6];
+        double[] arr = new double[6];
         Random random = new Random();
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100);
         }
-        int average = arr[0];
+        double average = arr[0];
         for (int i = 0; i < arr.length; i++) {
             average = (average + arr[i]);
 
