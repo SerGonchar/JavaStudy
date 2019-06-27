@@ -88,7 +88,7 @@ public class HomeWork {
 public class HomeWork {
     public static void main(String[] args) {
 
-        int[][] array = new int[4][4];
+        int[][] array = new int[4][8];
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -98,7 +98,8 @@ public class HomeWork {
             System.out.println();
         }
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ведите искомое число от 0 до 50");
+        System.out.println("==================================");
+        System.out.println("Ведите искомое число от 0 до 50");
         int search = scanner.nextInt();
         int result = 0;
 
@@ -109,6 +110,6 @@ public class HomeWork {
                 }
             }
         }
-        System.out.println("В матрице число "+ search+" найдено " + result + " раз");
+        System.out.println("В матрице число "+ search+" найдено " + result + " раз/а.");
     }
 }
