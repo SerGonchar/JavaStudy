@@ -143,43 +143,37 @@ public class Main {
 }
 */
 
-//4. Найти строку матрицы с максимальной суммой элементов
-public class HomeWork {
-    public static void main(String[] args) {
-
-        int[][] array = new int[3][3];
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            System.out.print("[" + i + "]: ");
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = random.nextInt(10);
-                System.out.print(array[i][j] + "\t");
-            }
-            System.out.println();
-        }
-
-
-        int rowMatrixNumber = 0;
-        int махSum = 0;
-
-        for (int j = 0; j < array.length; j++) {
-            int sum = 0;
-            for (int i = 0; i < array[j].length; i++) {
-                sum = sum + array[j][i];
-            }
-            if (sum > махSum){
-                махSum = sum;
-                rowMatrixNumber = j;
-            }
-            //если sum > махSum, то махSum = sum и rowMatrixNumber = j;
-        }
-
-        System.out.println("Номер строки с максимальной суммой элементов " + rowMatrixNumber +", равной "+ махSum);
-
-        // System.out.println(Arrays.toString(array[0]));
-
-    }
-}
+////4. Найти строку матрицы с максимальной суммой элементов
+//public class HomeWork {
+//    public static void main(String[] args) {
+//
+//        int[][] array = new int[3][3];
+//        Random random = new Random();
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.print("[" + i + "]: ");
+//            for (int j = 0; j < array[i].length; j++) {
+//                array[i][j] = random.nextInt(10);
+//                System.out.print(array[i][j] + "\t");
+//            }
+//            System.out.println();
+//        }
+//
+//        int rowMatrixNumber = 0;
+//        int sumMax = 0;
+//
+//        for (int j = 0; j < array.length; j++) {
+//            int sum = 0;
+//            for (int i = 0; i < array[j].length; i++) {
+//                sum = sum + array[j][i];
+//            }
+//            if (sum > sumMax) {
+//                sumMax = sum;
+//                rowMatrixNumber = j;
+//            }
+//        }
+//        System.out.println("Номер строки с максимальной суммой элементов " + rowMatrixNumber + ", равной " + sumMax);
+//    }
+//}
 
 /*
 
