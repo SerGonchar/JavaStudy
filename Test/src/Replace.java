@@ -2,7 +2,8 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Replase {
+public class Replace {
+
     public static void main(String[] args) {
 
         int[] arr = new int[11];
@@ -13,11 +14,11 @@ public class Replase {
         }
 
         System.out.println(Arrays.toString(arr));
-        for (int i = 0; i < arr.length / 2; i++) {
 
-            int sub = arr[i];            //substitution - подменная
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
-            arr[arr.length - 1 - i] = sub;
+            arr[arr.length - 1 - i] = temp;
         }
         System.out.println(Arrays.toString(arr));
     }

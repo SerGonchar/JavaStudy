@@ -4,6 +4,7 @@
 что справа от двоеточия (например, 02:20, 11:11 или 15:51).
 */
 public class Time {
+
     public static void main(String[] args) {
 
         int result = 0;

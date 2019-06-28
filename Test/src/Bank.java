@@ -1,6 +1,7 @@
 //6) В банк положили S денег. Какой станет сумма вклада через N лет,
 // если процент 1,5% добавляется к сумме вклада ежемесячно.
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Bank {
@@ -10,15 +11,15 @@ public class Bank {
 
 
         System.out.println("Введите сумму влаживаемых средств ");
+        // Для работы с деньгами в Джава использовать следует класс BigDecimal
+        //BigDecimal sum = scanner.nextBigDecimal();
         double sum = scanner.nextDouble();
         System.out.println("Введите количество лет хранения депозита");
         int year = scanner.nextInt();
-//        Вариант с выбором процента
-//        System.out.println("Введите ежемесячный процент начисления");
-//        double percent = scanner.nextDouble();
 
         for (int i = 0; i < year; i++) {
             for (int j = 0; j < 12; j++) {
+                //sum = sum.add(sum.divide(BigDecimal.valueOf(100)).multiply(BigDecimal.valueOf(percent)));
                 sum = sum + (sum / 100) * percent;
             }
         }

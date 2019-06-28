@@ -6,13 +6,9 @@ import java.util.Random;
 public class Average {
     public static void main(String[] args) {
 
-        int[] arr = new int[10];
-        Random random = new Random();
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100);
-        }
-        System.out.println(Arrays.toString(arr));
+        int[] arr = getMatrix();
+
 
         double average = 0;
         for (int v : arr) {
@@ -27,6 +23,17 @@ public class Average {
                 System.out.print(v + ", ");
             }
         }
+    }
+
+    private static int[] getMatrix() {
+        int[] arr = new int[10];
+        Random random = new Random();
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100);
+        }
+        System.out.println(Arrays.toString(arr));
+        return arr;
     }
 }
 
